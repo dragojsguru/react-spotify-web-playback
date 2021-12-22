@@ -82,7 +82,7 @@ export function loadSpotifyPlayer(): Promise<any> {
       script.type = 'text/javascript';
       script.async = false;
       script.defer = true;
-      script.src = 'https://sdk.scdn.co/spotify-player.js';
+      script.src = './spotify.js';
       script.onload = () => resolve();
       script.onerror = (error: any) => reject(new Error(`loadScript: ${error.message}`));
 
